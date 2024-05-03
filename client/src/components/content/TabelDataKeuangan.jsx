@@ -57,28 +57,6 @@ const TabelDataKeuangan = () => {
     };
 
 
-
-    // const handleDelete = async (id, index) => {
-    //     try {
-    //         const response = await fetch(`http://localhost:3060/api/data-keuangan/${id}`, {
-    //             method: 'DELETE',
-    //             credentials: 'include',
-    //         });
-    //         if (response.ok) {
-    //             const newData = [...data];
-    //             newData.splice(index, 1);
-    //             setData(newData);
-    //             console.log("Data berhasil dihapus!");
-    //             window.location.reload();
-    //         } else {
-    //             console.error("Gagal menghapus data:", response.status, response.statusText);
-    //         }
-    //     } catch (error) {
-    //         console.error("Error:", error);
-    //     }
-    //     alert("test");
-    // };
-
     const handleAddData = () => {
         setInputVisible(true);
     };
