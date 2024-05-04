@@ -75,15 +75,15 @@ export const PresensiMenu = () => {
 function SelectDefault({ selectedOption, onSelectChange }) {
     return (
         <div className="w-72 select-wrapper">
-            <select value={selectedOption} onChange={onSelectChange} className="py-2 px-3 border rounded-md flex mx-auto">
-                <option value="presensi" className="text-sm text-blue-gray-500">
+            <select value={selectedOption} onChange={onSelectChange} className="py-2 px-3 border rounded-md flex mx-auto text-gray-700">
+                <option value="presensi" className="text-sm ">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-6 h-6 inline-block align-middle">
                         <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" style={{ margin: '0 0.5rem' }}></path>
                     </svg>
                     Presensi Anggota
                 </option>
 
-                <option value="dataAnggota" className="text-sm text-blue-gray-500">
+                <option value="dataAnggota" className="text-sm ">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-6 h-6 inline-block align-middle mx-2">
                         <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
                     </svg>
@@ -96,24 +96,6 @@ function SelectDefault({ selectedOption, onSelectChange }) {
 
     );
 }
-
-
-
-
-const TABS = [
-    {
-        label: "All",
-        value: "all",
-    },
-    {
-        label: "Monitored",
-        value: "monitored",
-    },
-    {
-        label: "Unmonitored",
-        value: "unmonitored",
-    },
-];
 
 const TABLE_HEAD = ["Anggota", "NIM", "Telepon", "Aksi"];
 
