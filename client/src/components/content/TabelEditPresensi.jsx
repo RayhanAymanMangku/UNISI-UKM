@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Card, CardHeader, CardBody, Typography, IconButton, CardFooter } from '@material-tailwind/react';
+import { Card, CardHeader, CardBody, Typography } from '@material-tailwind/react';
 
 export const TabelEditPresensi = ({ onSelectChange }) => {
     const [selectedOption, setSelectedOption] = useState('');
@@ -119,7 +119,7 @@ export const TabelEditPresensi = ({ onSelectChange }) => {
                             </button>
                         </div>
 
-                        <IconButton onClick={handleCloseTabelEdit} className="modal-close cursor-pointer z-50">
+                        <button onClick={handleCloseTabelEdit} className="modal-close cursor-pointer z-50 absolute top-0 right-0">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="24"
@@ -135,7 +135,7 @@ export const TabelEditPresensi = ({ onSelectChange }) => {
                                 <line x1="18" y1="6" x2="6" y2="18"></line>
                                 <line x1="6" y1="6" x2="18" y2="18"></line>
                             </svg>
-                        </IconButton>
+                        </button>
                     </div>
                 </CardHeader>
 
