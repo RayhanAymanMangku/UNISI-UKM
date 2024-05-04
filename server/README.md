@@ -1,6 +1,6 @@
 # Running Project
 
-# cd client -> npm run start
+# cd client -> npm install -> npm run start
 
 # cd server -> nodemon app
 
